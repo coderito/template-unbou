@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.transition-height {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .open {
+    max-height: 10000px; /* O cualquier valor mayor que la altura máxima esperada */
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}
+
+.parrafo-services {
+    @apply text-xl md:text-4xl lg:text-5xl font-normal text-[#2d1640]
+}
